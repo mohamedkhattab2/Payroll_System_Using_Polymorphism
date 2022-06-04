@@ -59,6 +59,7 @@ public class Main {
                         employee.getBaseSalary());
             }
 
+
             System.out.printf(
                     "earned $%,.2f%n%n", currentEmployee.earnings());
         }

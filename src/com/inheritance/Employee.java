@@ -3,7 +3,7 @@ package com.inheritance;
 // Employee abstract superclass
 
 // abstract mean you can not create an object form this class
-public abstract class Employee {
+public abstract class Employee implements Payable {
     // common attributes in subclasses
     private final String firstName;
     private final String lastName;

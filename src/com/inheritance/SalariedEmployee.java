@@ -41,4 +41,9 @@ public class SalariedEmployee extends Employee {
         return String.format("%s: %s%n%s: $%.2f", "salaried employee", super.toString(), "weekly salary",
                 getWeeklySalary());
     }
+
+    @Override
+    public double getPayment() {
+        return 0;
+    }
 } // end class Salaried employee

@@ -11,7 +11,7 @@ public class HourlyEmployee extends Employee {
             throw new IllegalArgumentException
                     ("Hour wage must be >=0.0");
         }
-        if (hours < 0.0 || hours < 168.0) {
+        if (hours < 0.0 || hours >= 168.0) {
             throw new IllegalArgumentException
                     ("Hours worked must be >= 0.0 and <= 168.0");
         }
@@ -24,6 +24,10 @@ public class HourlyEmployee extends Employee {
     }
 
     public void setWage(double wage) {
+        if (wage < 0.0) {
+            throw new IllegalArgumentException
+                    ("Hour wage must be >=0.0");
+        }
         this.wage = wage;
     }
 
@@ -32,6 +36,10 @@ public class HourlyEmployee extends Employee {
     }
 
     public void setHours(double hours) {
+        if (hours < 0.0 || hours >= 168.0) {
+            throw new IllegalArgumentException
+                    ("Hours worked must be >= 0.0 and <= 168.0");
+        }
         this.hours = hours;
     }
 
@@ -49,5 +57,10 @@ public class HourlyEmployee extends Employee {
         return String.format("%s: %s%n%s: $%.2f; %s: %.2f ", "hourly employee",
                 super.toString(), "hourly wage", getWage(),
                 "hours worked", getHours());
+    }
+
+    @Override
+    public double getPayment() {
+        return 0;
     }
 } // end class HourlyEmployee
