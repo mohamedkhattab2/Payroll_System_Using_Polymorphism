@@ -1,3 +1,5 @@
+package com.inheritance;
+
 import com.inheritance.Employee;
 
 public class CommissionEmployee extends Employee {
@@ -49,7 +51,7 @@ public class CommissionEmployee extends Employee {
         return getCommissionRate() * getGrossSales();
     }
 
-    //return String representation of CommissionEmployee object
+    //return String representation of com.inheritance.CommissionEmployee object
     @Override // indicates that method overrides a superclass method
     public String toString() {
         return String.format("%s: %s%n%s: $%,.2f; %s: %.2f",
@@ -58,5 +60,5 @@ public class CommissionEmployee extends Employee {
                 "commission rate", getCommissionRate());
     }
 
-} // end class CommissionEmployee
+} // end class com.inheritance.CommissionEmployee
 
