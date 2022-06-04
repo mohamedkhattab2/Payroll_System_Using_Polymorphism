@@ -44,6 +44,6 @@ public class SalariedEmployee extends Employee {
 
     @Override
     public double getPayment() {
-        return 0;
+        return getWeeklySalary();
     }
 } // end class Salaried employee
