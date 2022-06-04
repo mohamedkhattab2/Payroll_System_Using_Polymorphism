@@ -11,7 +11,7 @@ public class HourlyEmployee extends Employee {
             throw new IllegalArgumentException
                     ("Hour wage must be >=0.0");
         }
-        if (hours < 0.0 || hours < 168.0) {
+        if (hours < 0.0 || hours >= 168.0) {
             throw new IllegalArgumentException
                     ("Hours worked must be >= 0.0 and <= 168.0");
         }
