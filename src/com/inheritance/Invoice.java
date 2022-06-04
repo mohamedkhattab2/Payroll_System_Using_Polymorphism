@@ -56,7 +56,7 @@ public class Invoice implements Payable{
     }
 
     @Override
-    public double getPayment() {
+    public double getPaymentAmount() {
         return  getQuantity() * getPricePerItem();
     }
 }

@@ -61,7 +61,7 @@ public class CommissionEmployee extends Employee {
     }
 
     @Override
-    public double getPayment() {
+    public double getPaymentAmount() {
         return 0;
     }
 } // end class com.inheritance.CommissionEmployee

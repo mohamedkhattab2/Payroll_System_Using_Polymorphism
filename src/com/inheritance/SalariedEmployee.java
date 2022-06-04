@@ -43,7 +43,7 @@ public class SalariedEmployee extends Employee {
     }
 
     @Override
-    public double getPayment() {
+    public double getPaymentAmount() {
         return getWeeklySalary();
     }
 } // end class Salaried employee
